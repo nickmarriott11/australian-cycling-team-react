@@ -1,4 +1,5 @@
 import React,  { useState } from "react";
+import './Navigation.css'
 
 const Navigation = () => {
   const [selectedNavItem, setSelectedNavItem] = useState("welcome");
@@ -6,7 +7,7 @@ const Navigation = () => {
     { id: 1, title: "RACE HIGHLIGHTS", name: "VideoHighlights" },
     { id: 2, title: "LEADERBOARD", name: "LeaderboardTable" },
     { id: 3, title: "UPCOMING EVENTS", name: "UpcomingEvents" },
-    { id: 4, title: "CLUB DIRECTORY", name: "ClubDirectory" },
+    { id: 4, title: "CLUB DIRECTORY", name: "ClubsDirectory" },
     { id: 5, title: "NEWS", name: "News" },
     { id: 6, title: "CONTACT US", name: "ContactForm" },
   ];

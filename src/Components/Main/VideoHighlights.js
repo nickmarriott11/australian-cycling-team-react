@@ -1,10 +1,16 @@
 import React from 'react';
+import './VideoHighlights.css';
+import youtubeIcon from '../../images/youtube.svg';
+import thumb1 from '../../images/thumb1.jpg';
+import thumb2 from '../../images/thumb2.jpg';
+import thumb3 from '../../images/thumb3.jpg';
+
 
 function VideoHighlights() {
- 
-  return(
-	<div className="VideoHighlights" id = "VideoHighlights">
-		<div class="headings">
+
+    return (
+        <div className="VideoHighlights">
+            <div class="headings" id="VideoHighlights">
                 <h2>Race Highlights</h2>
                 <h3>Check out the highlights from our latest events</h3>
             </div>
@@ -19,27 +25,27 @@ function VideoHighlights() {
                 </div>
                 <div class="gallery">
                     <div class="item">
-                        <img src="images/thumb1.jpg" data-id="12YY1EV4rzY?rel=0"></img>
+                        <img src={thumb1} data-id="12YY1EV4rzY?rel=0"></img>
                         <div class="youtube_icon active">
-                            <img src="images/youtube.svg"></img>
+                            <img src={youtubeIcon}></img>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="images/thumb2.jpg" data-id="46QQIp9RNzw?rel=0"></img>
+                        <img src={thumb2} data-id="46QQIp9RNzw?rel=0"></img>
                         <div class="youtube_icon">
-                            <img src="images/youtube.svg"></img>
+                            <img src={youtubeIcon}></img>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="images/thumb3.jpg" data-id="Xs-2ksG55sY?rel=0"></img>
+                        <img src={thumb3} data-id="Xs-2ksG55sY?rel=0"></img>
                         <div class="youtube_icon">
-                            <img src="images/youtube.svg"></img>
+                            <img src={youtubeIcon}></img>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
-  );
+        </div>
+    );
 };
 
 export default VideoHighlights;

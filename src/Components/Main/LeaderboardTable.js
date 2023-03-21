@@ -1,8 +1,9 @@
 import React from 'react';
+import './LeaderboardTable.css';
 
 function LeaderboardTable() {
-	return (  
-		<><div class="headings">
+	return (
+		<><div class="headings" id="LeaderboardTable">
 			<h2>Leaderboard</h2>
 			<h3>See how your favourite riders are performing this season</h3>
 		</div><table class="content-table">
@@ -76,7 +77,7 @@ function LeaderboardTable() {
 						<td>ACT</td>
 					</tr>
 				</tbody>
-			</table></>	
+			</table></>
 	);
 }
 

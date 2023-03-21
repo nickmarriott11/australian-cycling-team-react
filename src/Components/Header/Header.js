@@ -1,9 +1,10 @@
 import React from 'react'
+import logo from '../../images/logo-icon-cycling-team-invert.png';
 
 const Header = () => {
   return (
-	<div className="Header">
-		<h1>Australian Cycling Team</h1>
+	<div className="Header" i>
+		<img src={logo} width = {"500px"}/>
 	</div>
   );
 }
