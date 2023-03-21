@@ -1,13 +1,210 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*Styling for font/headings*/
+* {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Main {
+  display: flex;
+  overflow: hidden;
+}
+/*Styling for Sticky Nav Bar*/
+.Navigation {
+  color: black;
+  background-color: white;
+  width: 100%;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+ul.NavigationMenus {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+ul.NavigationMenus li {
+  list-style: none;
+  margin-right: 30px;
+  
+}
+ul.NavigationMenus li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  position: relative;
+  padding-bottom: 5px;
+}
+ul.NavigationMenus li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: darkgreen;
+  height: 1px;
+  width: 0%;
+  bottom: 0;
+  transition: 0.3s;
+  margin: 0px auto;
+  left: 0;
+  right: 0;
+}
+
+ul.NavigationMenus li a:hover:after{
+  width: 100%;
+  transition: 0.3s;
+}
+
+/* Styling for Video Gallery*/
+.container {
+  max-width: 1600px;
+  width: 85%;
+  display: block;
+  margin: 0 auto;
+}
+
+.container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.container .row .youtube_video {
+  width: 60%;
+  background-color: #000;
+  position: relative;
+  padding-bottom: 33.25%;
+  height: 0;
+}
+
+.container .row .youtube_video iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container .row .details {
+  width: 38%;
+  margin-left: 2%;
+  padding-left: 20px;
+}
+
+.container .row .details span {
+  font-size: 25px;
+}
+
+.container .row .details p {
+  font-size: 35px;
+}
+
+.container .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container .gallery .item {
+  width: calc(96% / 4);
+  position: relative;
+}
+
+.container .gallery .item img {
+  width: 100%;
+  display: block;
+}
+
+.container .gallery .item .youtube_icon {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.container .gallery .item .youtube_icon:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.container .gallery .item .youtube_icon.active {
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 5px 5px 10px;
+  box-shadow: 5px 5px 10px;
+}
+
+.container .gallery .item .youtube_icon.active img {
+  opacity: 0;
+}
+
+.container .gallery .item .youtube_icon img {
+  width: 50px;
+}
+
+/*Styling Leaderboard Table */
+.content-table {
+  border-collapse: collapse;
+  margin: 5px 0;
+  font-size: 1.2em;
+  min-width: 85%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-table thead tr {
+  background-color: black;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid black;
 }

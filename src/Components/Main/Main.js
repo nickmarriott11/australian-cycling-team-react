@@ -14,7 +14,7 @@ const Main = () => {
             <VideoHighlights />
             <LeaderboardTable />
             <UpcomingEvents />
-			<ClubsDirectory />
+			      <ClubsDirectory />
             <News />
             <ContactForm/>
 		</div> //
