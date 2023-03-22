@@ -18,7 +18,7 @@ const Main = () => {
       <ClubsDirectory />
       <News />
       <ContactForm />
-    </div> //
+    </div> 
   );
 };
 

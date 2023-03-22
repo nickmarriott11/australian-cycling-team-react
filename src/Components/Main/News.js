@@ -1,19 +1,23 @@
 import React from 'react';
 import './News.css';
+import newspic1 from '../../images/news1.jpg';
+import newspic2 from '../../images/news2.jpg';
+import newspic3 from '../../images/news3.jpg';
+
 
 function News() {
 	return (
-		<><div class="headings" id="News">
+		<><div className="headings" id="News">
 			<h2>News</h2>
 			<h3>The latest news from the Australian Cycling Team</h3>
-		</div><div class="news-section">
-				<div class="section-content news">
-					<div class="cards">
-						<div class="card">
-							<div class="image-section">
-								<img src="images/news1.webp"></img>
+		</div><div className="news-section">
+				<div className="section-content news">
+					<div className="cards">
+						<div className="card">
+							<div className="image-section">
+								<img src={newspic1}></img>
 							</div>
-							<div class="article">
+							<div className="article">
 								<h4>Garry Dawn takes the Lead!</h4>
 								<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 									incididunt ut labore et
@@ -25,18 +29,18 @@ function News() {
 									qui officia
 									deserunt mollit anim id est laborum.</p>
 							</div>
-							<div class="news-view">
+							<div className="news-view">
 								<a href="#" class="button">Read More</a>
 							</div>
-							<div class="posted-date">
+							<div className="posted-date">
 								<p>Posted on 1-3-23</p>
 							</div>
 						</div>
-						<div class="card">
-							<div class="image-section">
-								<img src="images/news2.jpg"></img>
+						<div className="card">
+							<div className="image-section">
+								<img src={newspic2}></img>
 							</div>
-							<div class="article">
+							<div className="article">
 								<h4>James Green making his way up the ladder</h4>
 								<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 									incididunt ut labore et
@@ -48,18 +52,18 @@ function News() {
 									qui officia
 									deserunt mollit anim id est laborum.</p>
 							</div>
-							<div class="news-view">
+							<div className="news-view">
 								<a href="#" class="button">Read More</a>
 							</div>
-							<div class="posted-date">
+							<div className="posted-date">
 								<p>Posted on 20-2-23</p>
 							</div>
 						</div>
-						<div class="card">
-							<div class="image-section">
-								<img src="images/news3.webp"></img>
+						<div className="card">
+							<div className="image-section">
+								<img src={newspic3}></img>
 							</div>
-							<div class="article">
+							<div className="article">
 								<h4>Lucas knocks Yoshi out of position</h4>
 								<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 									incididunt ut labore et
@@ -71,10 +75,10 @@ function News() {
 									qui officia
 									deserunt mollit anim id est laborum.</p>
 							</div>
-							<div class="news-view">
+							<div className="news-view">
 								<a href="#" class="button">Read More</a>
 							</div>
-							<div class="posted-date">
+							<div className="posted-date">
 								<p>Posted on 1-2-23</p>
 							</div>
 						</div>

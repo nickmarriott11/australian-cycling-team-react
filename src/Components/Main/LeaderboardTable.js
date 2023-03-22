@@ -3,10 +3,10 @@ import './LeaderboardTable.css';
 
 function LeaderboardTable() {
 	return (
-		<><div class="headings" id="LeaderboardTable">
+		<><div className="headings" id="LeaderboardTable">
 			<h2>Leaderboard</h2>
 			<h3>See how your favourite riders are performing this season</h3>
-		</div><table class="content-table">
+		</div><table className="content-table">
 				<thead>
 					<tr>
 						<th>Rank</th>
