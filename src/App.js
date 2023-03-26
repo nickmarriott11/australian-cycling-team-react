@@ -1,5 +1,5 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 import Navigation from "./Components/Navigation/Navigation";
 import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";

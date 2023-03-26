@@ -1,5 +1,5 @@
-import React,  { useState } from "react";
-import './Navigation.css'
+import React, { useState } from "react";
+import "./Navigation.css";
 
 const Navigation = () => {
   const [selectedNavItem, setSelectedNavItem] = useState("welcome");
@@ -28,26 +28,7 @@ const Navigation = () => {
         })}
       </ul>
     </div>
-    );
+  );
 };
 
 export default Navigation;
-
-
-
-/*import React from "react";
-import {useState, useEffect} from "react";
-
-const Navigation = () => {
-
-  const navItems = ["RACE HIGHLIGHTS", "LEADERBOARD","EVENTS", "CLUB DIRECTORY", "NEWS", "CONTACT"];
-  const navList = navItems.map((nav,index) => <li key={index}>{nav}</li>);
-  return (
-    <div>
-      <h3>Navigation</h3>
-      <ul>{navList}</ul>
-    </div>
-  )
-}
-
-export default Navigation; */

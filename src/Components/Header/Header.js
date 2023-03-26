@@ -1,12 +1,13 @@
-import React from 'react'
-import logo from '../../images/logo-icon-cycling-team-invert.png';
+import React from "react";
+import logo from "../../images/logo-icon-cycling-team-invert.png";
+import "./Header.css";
 
 const Header = () => {
   return (
-	<div className="Header" i>
-		<img src={logo} width = {"500px"}/>
-	</div>
+    <div className="Header" i>
+      <img src={logo}/>
+    </div>
   );
-}
+};
 
-export default Header
+export default Header;
