@@ -11,7 +11,7 @@ function NewsArticle(props) {
           <p>{props.content}</p>
         </div>
         <div className="news-view">
-          <a href="#" class="button">
+          <a href="#" className="button">
             Read More
           </a>
         </div>

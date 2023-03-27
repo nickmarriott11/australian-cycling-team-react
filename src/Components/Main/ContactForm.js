@@ -1,9 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./ContactForm.css";
 
 const ContactForm = () => {
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [showErrorMessage, setShowErrorMessage] = useState(false);
+
+  useEffect(() => {
+    let timer;
+
+    if (showSuccessMessage || showErrorMessage) {
+      timer = setTimeout(() => {
+        setShowSuccessMessage(false);
+        setShowErrorMessage(false);
+      }, 5000);
+    }
+
+    return () => clearTimeout(timer);
+  }, [showSuccessMessage, showErrorMessage]);
 
   const handleSubmit = (event) => {
     event.preventDefault();

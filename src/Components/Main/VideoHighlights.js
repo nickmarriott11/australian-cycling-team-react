@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import "./VideoHighlights.css";
-import youtubeIcon from "../../images/youtube.svg";
 import thumb1 from "../../images/thumb1.jpg";
 import thumb2 from "../../images/thumb2.jpg";
 import thumb3 from "../../images/thumb3.jpg";
@@ -30,7 +29,7 @@ function VideoHighlights() {
               src={`https://www.youtube.com/embed/${activeItemId}`}
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             />
           </div>
         </div>
