@@ -3,6 +3,7 @@ import "./Navigation.css";
 
 const Navigation = () => {
   const [selectedNavItem, setSelectedNavItem] = useState("welcome");
+  {}
   const navItems = [
     { id: 1, title: "RACE HIGHLIGHTS", name: "VideoHighlights" },
     { id: 2, title: "LEADERBOARD", name: "LeaderboardTable" },
@@ -11,6 +12,7 @@ const Navigation = () => {
     { id: 5, title: "NEWS", name: "News" },
     { id: 6, title: "CONTACT US", name: "ContactForm" },
   ];
+
 
   return (
     <div className="Navigation">

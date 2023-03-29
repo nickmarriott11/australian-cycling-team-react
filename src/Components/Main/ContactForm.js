@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./ContactForm.css";
 
 const ContactForm = () => {
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [showErrorMessage, setShowErrorMessage] = useState(false);
+  const formRef = useRef(null);
 
   useEffect(() => {
     let timer;
@@ -37,6 +38,7 @@ const ContactForm = () => {
     } else {
       setShowSuccessMessage(true);
       setShowErrorMessage(false);
+      formRef.current.reset();
       // TODO: handle form submission logic here
     }
   };
@@ -49,7 +51,7 @@ const ContactForm = () => {
           Got an inquiry? Or want to submit a photo from an event? Do it here!
         </h3>
       </div>
-      <form className="formcontainer" onSubmit={handleSubmit}>
+      <form className="formcontainer" onSubmit={handleSubmit} ref={formRef}>
         <input
           name="name"
           type="text"

@@ -39,18 +39,21 @@ function VideoHighlights() {
             youtube_id="12YY1EV4rzY?rel=0"
             active={activeItemId === "12YY1EV4rzY?rel=0"}
             onItemClick={handleItemClick}
+            alt = "video 1"
           />
           <VideoSelection
             thumbnail={thumb2}
             youtube_id="46QQIp9RNzw?rel=0"
             active={activeItemId === "46QQIp9RNzw?rel=0"}
             onItemClick={handleItemClick}
+            alt = "video 2"
           />
           <VideoSelection
             thumbnail={thumb3}
             youtube_id="Xs-2ksG55sY?rel=0"
             active={activeItemId === "Xs-2ksG55sY?rel=0"}
             onItemClick={handleItemClick}
+            alt = "video 3"
           />
         </div>
       </div>

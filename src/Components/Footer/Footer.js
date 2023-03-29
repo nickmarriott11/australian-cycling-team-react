@@ -1,10 +1,13 @@
 import React from "react";
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Popup from "../Main/PopUp";
+
 import {
   faFacebook,
   faInstagram,
-  faTwitter,} from "@fortawesome/free-brands-svg-icons";
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 import logo from "../../images/logo-icon-cycling-team-invert.png";
 
 function Footer() {
@@ -16,8 +19,16 @@ function Footer() {
         </div>
         <div class="footer_third">
           <h1>About</h1>
-          <a href="#">Privacy Statement</a>
-          <a href="#">Terms and Conditions</a>
+          <Popup
+            buttonText="Privacy Statement"
+            title="Privacy Statement"
+            content="Insert privacy statement content here"
+          />
+          <Popup
+            buttonText="Terms and Conditions"
+            title="Terms and Conditions"
+            content="Insert terms and conditions content here"
+          />
           <a href="mailto:104579054@student.swin.edu.au">Email Us</a>
         </div>
         <div class="footer_third">

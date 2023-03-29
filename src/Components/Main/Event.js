@@ -6,7 +6,7 @@ function Event(props) {
 
   return (
     <li>
-      <a href="">
+      <a>
         <div className="event-left-content">
           <div className="title-event">
             <h2>{props.title}</h2>
@@ -24,3 +24,4 @@ function Event(props) {
 }
 
 export default Event;
+
