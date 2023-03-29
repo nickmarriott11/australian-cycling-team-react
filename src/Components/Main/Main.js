@@ -7,17 +7,32 @@ import UpcomingEvents from "./UpcomingEvents";
 import ClubsDirectory from "./ClubsDirectory";
 import News from "./News";
 import ContactForm from "./ContactForm";
+import ErrorBoundary from "../error_boundary/error_boundary";
 
 const Main = () => {
   return (
     <div className="MainSection">
-      <Welcome />
-      <VideoHighlights />
-      <LeaderboardTable />
-      <UpcomingEvents />
-      <ClubsDirectory />
-      <News />
-      <ContactForm />
+      <ErrorBoundary>
+        <Welcome />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <VideoHighlights />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <LeaderboardTable />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <UpcomingEvents />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <ClubsDirectory />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <News />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <ContactForm />
+      </ErrorBoundary>
     </div>
   );
 };
