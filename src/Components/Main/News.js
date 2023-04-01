@@ -1,3 +1,9 @@
+/*
+*This component displays news articles from the Australian Cycling Team.
+*The component renders three NewsArticle components, each displaying an image, title, content, and date. 
+*The NewsArticle components are passed in data as props, including the images which are imported from local image files. 
+*/
+
 import React from "react";
 import "./News.css"
 import NewsArticle from "./NewsArticle";

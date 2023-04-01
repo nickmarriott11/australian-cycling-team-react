@@ -1,3 +1,12 @@
+/*
+This component displays a contact form where users can submit their name, email, 
+a message, and a file/photo. It uses advanced JavaScript techniques such as destructuring,
+destructured assignment, and the nullish coalescing operator to simplify code. 
+It also leverages React hooks, including useState, useEffect, and useRef, to manage 
+component state, update the component in response to changes in state or props, and
+reference elements within the DOM. In addition, this component uses conditional rendering 
+to display success and error messages to the user upon form submission.
+*/
 import React, { useState, useEffect, useRef } from "react";
 import "./ContactForm.css";
 

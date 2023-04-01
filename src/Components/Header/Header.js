@@ -1,3 +1,6 @@
+/*
+The Header component displays the logo for the australian cycling team.
+*/
 import React from "react";
 import logo from "../../images/logo-icon-cycling-team-invert.png";
 import "./Header.css";

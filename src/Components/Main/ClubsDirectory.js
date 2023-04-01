@@ -1,3 +1,8 @@
+/*
+This component renders the Club Directory section of the website.
+It contains a heading with a description and an embedded Google Map 
+showing the location of ACT sanctioned cycling clubs. 
+*/
 import React from "react";
 import "./ClubsDirectory.css";
 

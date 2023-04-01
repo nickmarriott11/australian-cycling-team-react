@@ -1,3 +1,9 @@
+/*
+This component is the main section of the website, it imports and renders several sub-components which include 
+Welcome, VideoHighlights, LeaderboardTable, UpcomingEvents, ClubsDirectory, News, ContactForm. 
+It also uses an ErrorBoundary component to catch any errors that may occur within the sub-components.
+*/
+
 import React from "react";
 import Welcome from "./Welcome";
 import "./Main.css";

@@ -1,3 +1,11 @@
+/*
+This React component is a popup window that can be toggled on and off by clicking a button
+or a link. It uses the useState hook to control the visibility of the popup, which is an advanced
+React methodology. The purpose of the component is to provide a way to display additional information
+or actions without cluttering the main page. It receives props such as buttonText, title, and content
+to customize the popup's appearance and content. This component also uses event handling to toggle the
+visibility of the popup when the button or link is clicked.
+*/
 import React, { useState } from "react";
 import "./PopUp.css";
 

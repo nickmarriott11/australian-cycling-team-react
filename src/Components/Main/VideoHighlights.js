@@ -1,3 +1,12 @@
+/*
+This is a React component called 'VideoHighlights', which displays a YouTube video player 
+and a gallery of thumbnail images of other videos. The selected video from the gallery is
+shown in the player when clicked. The component uses advanced JavaScript and React
+methodologies such as useState hook, conditional rendering, props, and callbacks to
+manage the state of the video player and the gallery items. It also uses the YouTube
+API to embed and play the videos.
+*/
+
 import React from "react";
 import { useState } from "react";
 import "./VideoHighlights.css";

@@ -1,3 +1,10 @@
+/*
+ This component represents the navigation menu of the website, allowing users to select 
+ different sections of the website to navigate to. It renders a list of navigation items 
+ that are defined in the `navItems` array. When a user clicks on a navigation item, 
+ it updates the `selectedNavItem` state to highlight the selected item in the menu.
+ */
+
 import React, { useState } from "react";
 import "./Navigation.css";
 

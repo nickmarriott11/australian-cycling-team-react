@@ -1,21 +1,24 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import UpcomingEvents from '../Main/UpcomingEvents';
+import { render, fireEvent } from '@testing-library/react';
+import Navigation from '../Navigation/Navigation';
 
-describe('UpcomingEvents', () => {
-  test('renders event titles, dates, and locations', () => {
-    const { getByText } = render(<UpcomingEvents />);
-    
-    expect(getByText('National Road Racing Championships')).toBeInTheDocument();
-    expect(getByText('February 5, 2023')).toBeInTheDocument();
-    expect(getByText('Geelong, VIC')).toBeInTheDocument();
+describe('Navigation', () => {
+  // Test that the navigation links are rendered correctly
+  it('renders navigation links correctly', () => {
+    const { getByText } = render(<Navigation />);
+    expect(getByText('RACE HIGHLIGHTS')).toBeInTheDocument();
+    expect(getByText('LEADERBOARD')).toBeInTheDocument();
+    expect(getByText('UPCOMING EVENTS')).toBeInTheDocument();
+    expect(getByText('CLUB DIRECTORY')).toBeInTheDocument();
+    expect(getByText('NEWS')).toBeInTheDocument();
+    expect(getByText('CONTACT US')).toBeInTheDocument();
+  });
 
-    expect(getByText('National Gravel Racing Champtionships')).toBeInTheDocument();
-    expect(getByText('April 7, 2023')).toBeInTheDocument();
-    expect(getByText('Mudgee, NSW')).toBeInTheDocument();
-
-    expect(getByText('QLD State Cyclocross Championships')).toBeInTheDocument();
-    expect(getByText('June 20, 2023')).toBeInTheDocument();
-    expect(getByText('Burleigh Heads, QLD')).toBeInTheDocument();
+  // Test that clicking a navigation link changes the active menu item
+  it('should change the active menu item on click', () => {
+    const { getByText } = render(<Navigation />);
+    const upcomingEventsLink = getByText('UPCOMING EVENTS');
+    fireEvent.click(upcomingEventsLink);
+    expect(upcomingEventsLink.closest('li')).toHaveClass('activeNavItem');
   });
 });

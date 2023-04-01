@@ -1,3 +1,10 @@
+/*
+This component is responsible for displaying a list of upcoming cycling events on the 
+website for the Australian Cycling Team. 
+It uses the Event component to display individual events, and contains a heading and
+icon-box for design purposes.
+*/
+
 import React from "react";
 import "./UpcomingEvents.css";
 import Event from "./Event";
