@@ -1,7 +1,7 @@
 /*
 *This component displays news articles from the Australian Cycling Team.
-*The component renders three NewsArticle components, each displaying an image, title, content, and date. 
-*The NewsArticle components are passed in data as props, including the images which are imported from local image files. 
+*The component renders NewsArticle subcomponent three times, each displaying an image, title, content, and date. 
+*The NewsArticle component is passed in data as props, including the images which are imported from local image files. 
 */
 
 import React from "react";

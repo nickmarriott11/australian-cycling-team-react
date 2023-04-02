@@ -1,7 +1,7 @@
 /*
 *The Event component displays a single event with its details.
 *It takes in props containing the event's title, date, and location.
-*It also extracts the month and day from the date prop to display them in a stylized way.
+*It also extracts the month and day from the date prop to display them in a stylised way.
 */
 import React from "react";
 
