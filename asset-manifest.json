@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/australian-cycling-team-react/static/css/main.4da7b4af.css",
+    "main.js": "/australian-cycling-team-react/static/js/main.5db6dfb2.js",
+    "static/js/787.b1ad42b2.chunk.js": "/australian-cycling-team-react/static/js/787.b1ad42b2.chunk.js",
+    "static/media/news3.jpg": "/australian-cycling-team-react/static/media/news3.e70a9edd07a71be5f951.jpg",
+    "static/media/news2.jpg": "/australian-cycling-team-react/static/media/news2.9403cf1ee338fa41056d.jpg",
+    "static/media/header.jpg": "/australian-cycling-team-react/static/media/header.af2bc0e2162fa5a41349.jpg",
+    "static/media/news1.jpg": "/australian-cycling-team-react/static/media/news1.45debc02f563f2622de4.jpg",
+    "static/media/logo-icon-cycling-team-invert.png": "/australian-cycling-team-react/static/media/logo-icon-cycling-team-invert.07b0ecdcd925858f0849.png",
+    "static/media/thumb2.jpg": "/australian-cycling-team-react/static/media/thumb2.f279d93976aab0de8e65.jpg",
+    "static/media/thumb1.jpg": "/australian-cycling-team-react/static/media/thumb1.fe6cc190c6502296085a.jpg",
+    "static/media/thumb3.jpg": "/australian-cycling-team-react/static/media/thumb3.f96b4b3ef1579554cb91.jpg",
+    "static/media/youtube.svg": "/australian-cycling-team-react/static/media/youtube.d62abaecb825f4fe7b8022985a03eebe.svg",
+    "index.html": "/australian-cycling-team-react/index.html",
+    "main.4da7b4af.css.map": "/australian-cycling-team-react/static/css/main.4da7b4af.css.map",
+    "main.5db6dfb2.js.map": "/australian-cycling-team-react/static/js/main.5db6dfb2.js.map",
+    "787.b1ad42b2.chunk.js.map": "/australian-cycling-team-react/static/js/787.b1ad42b2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4da7b4af.css",
+    "static/js/main.5db6dfb2.js"
+  ]
+}
