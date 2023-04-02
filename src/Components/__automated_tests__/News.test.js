@@ -1,24 +1,32 @@
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
-import Navigation from '../Navigation/Navigation';
+import { render, screen } from '@testing-library/react';
+import News from '../Main/News';
+import NewsArticle from '../Main/NewsArticle';
 
-describe('Navigation', () => {
-  // Test that the navigation links are rendered correctly
-  it('renders navigation links correctly', () => {
-    const { getByText } = render(<Navigation />);
-    expect(getByText('RACE HIGHLIGHTS')).toBeInTheDocument();
-    expect(getByText('LEADERBOARD')).toBeInTheDocument();
-    expect(getByText('UPCOMING EVENTS')).toBeInTheDocument();
-    expect(getByText('CLUB DIRECTORY')).toBeInTheDocument();
-    expect(getByText('NEWS')).toBeInTheDocument();
-    expect(getByText('CONTACT US')).toBeInTheDocument();
+describe('News component', () => {
+  test('renders the headings', () => {
+    render(<News />);
+    const headings = screen.getByRole('heading', { level: 2, name: 'News' });
+    const subHeadings = screen.getByRole('heading', { level: 3, name: 'The latest news from the Australian Cycling Team' });
+    expect(headings).toBeInTheDocument();
+    expect(subHeadings).toBeInTheDocument();
   });
+});
 
-  // Test that clicking a navigation link changes the active menu item
-  it('should change the active menu item on click', () => {
-    const { getByText } = render(<Navigation />);
-    const upcomingEventsLink = getByText('UPCOMING EVENTS');
-    fireEvent.click(upcomingEventsLink);
-    expect(upcomingEventsLink.closest('li')).toHaveClass('activeNavItem');
+describe('NewsArticle component', () => {
+  test('renders the article information', () => {
+    const image = 'https://example.com/image.jpg';
+    const title = 'Article title';
+    const content = 'Article content';
+    const date = 'Posted on 1-1-23';
+    render(<NewsArticle image={image} title={title} content={content} date={date} />);
+    const articleImage = screen.getByRole('img', { src: image });
+    const articleTitle = screen.getByRole('heading', { level: 4, name: title });
+    const articleContent = screen.getByText(content);
+    const articleDate = screen.getByText(date);
+    expect(articleImage).toBeInTheDocument();
+    expect(articleTitle).toBeInTheDocument();
+    expect(articleContent).toBeInTheDocument();
+    expect(articleDate).toBeInTheDocument();
   });
 });
