@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import News from '../Main/News';
 import NewsArticle from '../Main/NewsArticle';
-
+//This test is checking if the News component renders the correct headings on the page. It expects to find two headings, one with the text "News" and the other with the text "The latest news from the Australian Cycling Team"
 describe('News component', () => {
   test('renders the headings', () => {
     render(<News />);
@@ -12,7 +12,7 @@ describe('News component', () => {
     expect(subHeadings).toBeInTheDocument();
   });
 });
-
+//This test is checking if the NewsArticle component renders the correct information for a given article. It expects to find an image, a title, content, and a date.
 describe('NewsArticle component', () => {
   test('renders the article information', () => {
     const image = 'https://example.com/image.jpg';

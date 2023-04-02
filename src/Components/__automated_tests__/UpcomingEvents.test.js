@@ -2,6 +2,8 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import UpcomingEvents from '../Main/UpcomingEvents';
 
+/*This test checks that the UpcomingEvents component renders event titles, dates, and locations correctly. 
+It renders the component and then checks if the expected text for each event is present in the component. */
 describe('UpcomingEvents', () => {
   test('renders event titles, dates, and locations', () => {
     const { getByText } = render(<UpcomingEvents />);
